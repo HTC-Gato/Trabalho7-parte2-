@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import modelo.Pessoa;
 import modelo.Sexo;
 import modelo.Telefone;
+import java.util.List;
+import java.util.Scanner;
 
 public class Principal {
    
@@ -46,36 +48,26 @@ public class Principal {
         t4.setCodigoArea("9ab480");
         t4.setNumero("63 98115-9735");
         
+        Pessoa p5 = new Pessoa();
+        p5.setNome("Gustavo");
+        p5.setIdade(32);
+        p5.setSexo(Sexo.MASCULINO);
+        Telefone t5 = new Telefone();
+        t5.setCodigoArea("7cz749");
+        t5.setNumero("63 98221-4366");
+        
         pessoas.add(p1);
         pessoas.add(p2);
         pessoas.add(p3);
         pessoas.add(p4);
+        pessoas.add(p5);
 
         telefones.add(t1);
         telefones.add(t2);
         telefones.add(t3);
         telefones.add(t4);
+        telefones.add(t5);
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
- 
         
         
         impressao(p1);
@@ -89,6 +81,9 @@ public class Principal {
         System.out.println();
         impressao(p4);
         impressao(t4);
+        System.out.println();
+        impressao(p5);
+        impressao(t5);
         System.out.println();
         
         imprimirLista(pessoas, telefones, Sexo.MASCULINO);
